@@ -3,6 +3,7 @@
 #define N 1000000
 #define WORD_LENGTH sizeof(int) * 8
 
+// set和test应该类似于hash表的作用
 void setbit (unsigned int* bits, unsigned int i){
 	bits[i / WORD_LENGTH] |= 1 << (i % WORD_LENGTH);
 }
