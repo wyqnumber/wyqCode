@@ -15,7 +15,7 @@ unsigned int bits[N / WORD_LENGTH + 1];
 
 int min_free(int * xs, int n){
 	int i, len = N / WORD_LENGTH + 1;
-	for (i = 0; i < len; ++i)  //代表有几个WORD_LENGTH
+	for (i = 0; i < len; ++i)  //表示有几个WORD_LENGTH
 		bits[i] = 0;
 	for (i = 0; i < n; ++i)
 		if (xs[i] < n)
