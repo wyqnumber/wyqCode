@@ -1,0 +1,36 @@
+一些命令：
+docker images
+
+docker run docker/whalesay cowsay Hello-Jinjin
+
+docker run -it gcr.io/tensorflow/tensorflow bash
+
+
+
+docker run -i -t ubuntu:14.04 /bin/bash
+
+wget -O anaconda2 https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
+
+docker run -it -v /f/DockerSomthing/Coding/Ubuntu: ubuntu:14.04 /bin/bash
+
+docker ps -a
+
+docker start -ai condescending_ritchie
+
+docker start -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents -ai condescending_ritchie
+
+
+docker run -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents  --name MyUbuntu ubuntu:14.04 /bin/bash
+
+正式内容：
+
+目前只打算使用Ubuntu 14.04
+
+主机丢失
+docker start -ai condescending_ritchie
+https://segmentfault.com/a/1190000002766882
+
+
+挂载本地目录，没有成功，打算用FTP：
+https://my.oschina.net/piorcn/blog/324202
+http://www.linuxidc.com/Linux/2015-12/126357.htm
