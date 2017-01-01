@@ -34,3 +34,30 @@ https://segmentfault.com/a/1190000002766882
 挂载本地目录，没有成功，打算用FTP：
 https://my.oschina.net/piorcn/blog/324202
 http://www.linuxidc.com/Linux/2015-12/126357.htm
+这个好用：
+docker run -it -v /c/Users/wyq/moutCoding:/root/Documents --name Ubuntu14 ubuntu:14.04 /bin/bash
+http://yanjunbiao.me/2016/01/03/Volume-Mount-Issue-of-Docker-on-Windows/
+http://neverlee.github.io/post/docker-mount/
+
+
+
+docker ps -a
+
+docker start -ai condescending_ritchie
+
+docker start -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents -ai condescending_ritchie
+
+
+docker run -it -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents  --name MyUbuntu ubuntu:14.04 
+
+/bin/bash
+
+docker run -it -v /c/Users/wyq/moutCoding:/root/Documents --name Ubuntu14 ubuntu:14.04 /bin/bash
+
+docker run -v /c/Users/<path>:/<container path> C:\Users\wyq\moutCoding
+
+
+docker rm MyUbuntu
+
+docker start -ai Ubuntu14
+http://www.cnblogs.com/ivictor/p/4834864.html
