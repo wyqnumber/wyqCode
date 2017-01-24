@@ -13,6 +13,8 @@ worker内存不足
 
 解决：
 可能是内存不足，减少数据到60条就可以了。
+还有加内存，参考 http://blog.csdn.net/qyl445/article/details/50684691
+命令行中的内存大小，不能大于配置文件中的内存大小。
 
 
 这篇文章直接在docker配置spark，代码跑不了
