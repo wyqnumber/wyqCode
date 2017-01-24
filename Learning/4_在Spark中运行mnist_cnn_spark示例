@@ -1,0 +1,20 @@
+
+spark集群上如何配置深度学习elephas框架的操作流程
+http://blog.csdn.net/richard_more/article/details/53420812
+这篇文章中的代码能够运行，要求 keras的版本很低。
+pip install elephas　　pip install keras==0.3.0
+
+运行时，出现错误：WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+
+原因：
+host配置不正确
+worker内存不足
+相关端口号被占用
+
+解决：
+可能是内存不足，减少数据到60条就可以了。
+
+
+这篇文章直接在docker配置spark，代码跑不了
+http://blog.csdn.net/cyh_24/article/details/49683221
+
