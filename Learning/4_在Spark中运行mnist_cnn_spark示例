@@ -19,4 +19,13 @@ worker内存不足
 
 这篇文章直接在docker配置spark，代码跑不了
 http://blog.csdn.net/cyh_24/article/details/49683221
+可以看评论：
+model.add(Convolution2D(nb_filters, nb_conv, nb_conv,
+border_mode='full',
+input_shape=(1, img_rows, img_cols)))
+可能需要修改为
+model.add(Convolution2D(nb_filters, nb_conv, nb_conv,
+border_mode='valid',
+input_shape=(1, img_rows, img_cols)))
 
+elephas好像没有num_workers这个参数
