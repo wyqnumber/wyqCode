@@ -1,0 +1,15 @@
+
+搭建过程还可以，跑起来就是另一个回事，还有些问题
+
+配置过程的参考文章：
+
+Spark 1.6.1分布式集群环境搭建
+http://www.cnblogs.com/onetwo/p/5424377.html
+
+Hadoop 2.6.4分布式集群环境搭建
+https://my.oschina.net/jackieyeah/blog/657750
+https://my.oschina.net/jackieyeah/blog/657032
+
+http://blog.csdn.net/predict_wise/article/details/50855041
+
+以及百度搜索 spark 分布式集群搭建
