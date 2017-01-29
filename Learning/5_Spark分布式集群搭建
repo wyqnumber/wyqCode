@@ -13,3 +13,44 @@ https://my.oschina.net/jackieyeah/blog/657032
 http://blog.csdn.net/predict_wise/article/details/50855041
 
 以及百度搜索 spark 分布式集群搭建
+
+
+问题：
+1. org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://master:9000/home/master/Documents/Spark/Code/MachineLearningwithSpark/ch01/python-spark-app/data/UserPurchaseHistory.csv
+
+hadoop fs -put ~/Documents/.../.csv /user/data/ 即可
+
+2. hadoop 2.6 datanode 不能启动
+
+http://blog.csdn.net/zhangt85/article/details/42078347
+这个方法在master上启动了datanode，但在slave上没有，但程序能够正常运行，不影响。
+
+
+
+
+hdfs namenode -format
+
+cd ~/Public/SoftWare/hadoop/hadoop-2.6.5/etc/hadoop
+
+cd ~/Public/SoftWare/hadoop/hadoop-2.6.5/sbin  ./stop-all.sh
+
+start-dfs.sh
+
+start-yarn.sh
+
+start-master.sh
+
+start-slaves.sh
+
+Re-format filesystem in Storage Directory /home/master/Public/SoftWare/hadoop/hadoop-2.6.5/tmp/dfs/name
+
+stop-master.sh 
+
+stop-slaves.sh
+
+
+hadoop fs -mkdir /user
+
+hadoop fs -ls
+
+hadoop fs -put ~/Documents/.../.csv /user/data/
