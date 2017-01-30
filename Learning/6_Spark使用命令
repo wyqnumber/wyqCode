@@ -1,0 +1,103 @@
+
+docker images
+
+docker run docker/whalesay cowsay Hello-Jinjin
+
+docker run -it gcr.io/tensorflow/tensorflow bash
+
+
+
+docker run -i -t ubuntu:14.04 /bin/bash
+
+wget -O Anaconda2-4.2.sh https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
+
+docker run -it -v /f/DockerSomthing/Coding/Ubuntu: ubuntu:14.04 /bin/bash
+
+docker ps -a
+
+docker start -ai condescending_ritchie
+
+docker start -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents -ai condescending_ritchie
+
+
+docker run -it -v /f/DockerSomthing/Coding/Ubuntu:/root/Documents  --name MyUbuntu ubuntu:14.04 /bin/bash
+
+docker run -it -v /c/Users/wyq/moutCoding:/root/Documents --name Ubuntu14 ubuntu:14.04 /bin/bash
+
+docker run -v /c/Users/<path>:/<container path> C:\Users\wyq\moutCoding
+
+docker run -it -v /c/Users/wyq/moutCoding:/root/Documents --name UbuntuYG ubuntu:14.04 /bin/bash
+
+docker rm MyUbuntu
+
+docker start -ai Ubuntu14
+
+docker start -ai condescending_ritchie
+
+docker start -ai UbuntuYG
+
+./bin/spark-submit --master spark://127.0.0.1:7077 --executor-memory 6G ~/Documents/cnnSpark.py
+
+
+=======================================================================================================================
+
+http://blog.csdn.net/predict_wise/article/details/50855041
+
+
+
+
+./sbin/start-master.sh
+
+./sbin/start-slave.sh spark://127.0.0.1:7077
+
+./sbin/stop-master.sh
+
+./sbin/stop-slave.sh
+
+http://localhost:8080/
+
+http://localhost:8081/
+
+
+
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+./bin/spark-submit --master spark://127.0.0.1:7077 examples/src/main/python/pi.py
+
+./bin/spark-submit examples/src/main/python/pi.py
+
+./bin/spark-submit examples/src/main/python/wordcount.py /home/master/Documents/Spark/testFile/test.txt
+
+./bin/spark-submit /home/master/Documents/Spark/Code/MachineLearningwithSpark/ch01/python-spark-app/pythonapp.py
+
+./bin/spark-submit /home/master/Documents/Spark/Code/mnist_mlp_spark_CC.py
+
+
+============================================================================================================================
+
+hdfs namenode -format
+
+cd ~/Public/SoftWare/hadoop/hadoop-2.6.5/etc/hadoop
+
+cd ~/Public/SoftWare/hadoop/hadoop-2.6.5/sbin  ./stop-all.sh
+
+start-dfs.sh
+
+start-yarn.sh
+
+start-master.sh
+
+start-slaves.sh
+
+Re-format filesystem in Storage Directory /home/master/Public/SoftWare/hadoop/hadoop-2.6.5/tmp/dfs/name
+
+stop-master.sh 
+
+stop-slaves.sh
+
+
+hadoop fs -mkdir /user
+
+hadoop fs -ls
+
+hadoop fs -put ~/Documents/.../.csv /user/data/
