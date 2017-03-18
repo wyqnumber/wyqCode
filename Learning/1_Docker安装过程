@@ -2,7 +2,12 @@
 
 网站有各种教程，综合了一些：
 
-靠谱的是： 在Windows上玩TensorFlow(一)——安装Docker http://m.blog.csdn.net/article/details?id=51387161
+靠谱的是： 
+在Windows上玩TensorFlow(一)——安装Docker 
+http://m.blog.csdn.net/article/details?id=51387161
+http://blog.csdn.net/neilron/article/details/51387161
+http://www.linuxidc.com/Linux/2016-07/133506.htm
+
 
 Tensorflow的安装直接从官网 https://hub.docker.com/r/tensorflow/tensorflow/ 使用 docker run -it -p 8888:8888 tensorflow/tensorflow 即可。
 
